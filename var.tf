@@ -68,7 +68,7 @@ variable "environment" {
   default="Staging"
 }
 
-variable "team" {
+variable "teamName" {
   description = "Tag for the resources"
-  default="Staging"
+  default= "tools infra"
 }
