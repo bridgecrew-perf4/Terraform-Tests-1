@@ -86,6 +86,7 @@ resource "azurerm_managed_disk" "example" {
 
  tags = {
     environment = "${var.environment}"
+    team       = "${var.teamName}"
   }
 }
 
