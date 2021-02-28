@@ -62,10 +62,8 @@ resource "azurerm_virtual_machine" "main" {
   os_profile_linux_config {
     disable_password_authentication = false
   }
-  tags = {
-    environment = "${var.environment}"
-  }
-}
+ 
+
 resource "azurerm_public_ip" "test" {
   name                = "${var.prefix}-PublicIp"
   location            = "${var.region}"
